@@ -6,7 +6,7 @@ exports.getAllList = async (req, res, next) => {
         let bodyData = { "filters": { "gender": null, "price_range": [0, 15000000], "tag_ids": [], "rent_type": 2, "property_type": "all", "random_seeds": 166, "booking": 0 }, "sorting": { "fields": "price", "direction": "-" }, "include_promoted": false, "limit": 20, "offset": 0, "location": [[110.38792133331299, -7.771546159551934], [110.4101085662842, -7.740036790436441]] }
         let optionsGetList = {
             method: 'POST',
-            uri: 'https://mamikos.com/garuda/stories/list',
+            uri: 'https://mamikos.com/garuda/stories/cluster',
             body: bodyData,
             json: true
         };
